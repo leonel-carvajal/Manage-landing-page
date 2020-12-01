@@ -43,3 +43,29 @@ transform: translateX(0);
     display: none;
   }
 }
+.mensaje{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color:$darkblue;
+  transform: translateY(-100%);
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+
+}
+.error{
+  animation-name: msj;
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+}
+@keyframes msj {
+  from{
+    transform: translateY(-100%);
+  }
+  to{
+    transform: translateY(0%);
+  }
+}
