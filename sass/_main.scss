@@ -1,0 +1,86 @@
+.main {
+  height: 350px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__title {
+    color: $darkblue;
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &__content {
+    color: rgba(#000, 0.3);
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  &__button {
+    display: block;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    outline: none;
+    background-color: $bright-red;
+    color: $veryligh;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    border-radius: 40px;
+  }
+}
+
+.different {
+  & h2 {
+    color: $darkblue;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  & p {
+    color: rgba(#000, 0.3);
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+.content{
+  margin-bottom: 60px;
+}
+.card{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  & p{
+    text-align: left;
+  }
+  .up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(hsl(12, 88%, 59%), 0.2);
+    height: 40px;
+    border-radius:80px 70px;
+    &__subtitle {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-right: 10px;
+    }
+    &__p{
+      background-color: $bright-red;
+      width: 65px;
+      height: 100%;
+      border-radius: 80px;
+      color: $veryligh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+}
+.card:last-child{
+  margin-bottom: 70px;
+}

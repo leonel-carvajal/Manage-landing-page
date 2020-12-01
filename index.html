@@ -15,22 +15,23 @@
 
   <header class="header">
     <nav class="navbar">
-      <img src="/images/icon-hamburger.svg" alt="icon-hamburger">
-      <ul>
-        <li class="item">Pricing</li>
-        <li class="item">Product</li>
-        <li class="item">About Us</li>
-        <li class="item">Careers</li>
-        <li class="item">Community</li>
+      <img src="/images/icon-hamburger.svg" alt="icon-hamburger" class="navbar__ham">
+      <img src="/images/logo.svg" alt="logo" class="navbar__logo">
+      <ul class="menu" id="menu">
+        <li class="menu__item">Pricing</li>
+        <li class="menu__item">Product</li>
+        <li class="menu__item">About Us</li>
+        <li class="menu__item">Careers</li>
+        <li class="menu__item">Community</li>
       </ul>
-      <button class="button">Get Started</button>
+      <button class="button-nav">Get Started</button>
     </nav>
   </header>
   <section class="main">
-    <h1 class="title">Bring everyone together to build better products.</h1>
-    <p>Manage makes it simple for software teams to plan day-to-day
+    <h1 class="main__title">Bring everyone together to build better products.</h1>
+    <p class="main__content">Manage makes it simple for software teams to plan day-to-day
       tasks while keeping the larger team goals in view.</p>
-    <button class="button">Get Started</button>
+    <button class="main__button">Get Started</button>
   </section>
   <section class="different">
     <article class="content">
@@ -41,24 +42,30 @@
     </article>
 
     <article class="card">
-      <span>01</span>
-      <h2 class="subtitle">Track company-wide progress</h2>
-      <p class="cont">
+      <div class="up">
+        <p class="up__p">01</p>
+        <h2 class="up__subtitle">Track company-wide progress</h2>
+      </div>
+      <p>
         See how your day-to-day tasks fit into the wider vision. Go from
         tracking progress at the milestone level all the way done to the
         smallest of details. Never lose sight of the bigger picture again.</p>
     </article>
     <article class="card">
-      <span>02</span>
-      <h2 class="subtitle"> Advanced built-in reports</h2>
+      <div class="up">
+        <p class="up__p">02</p>
+        <h2 class="up__subtitle"> Advanced built-in reports</h2>
+      </div>
       <p class="cont">
         Set internal delivery estimates and track progress toward company
         goals. Our customisable dashboard helps you build out the reports
         you need to keep key stakeholders informed.</p>
     </article>
     <article class="card">
-      <span>03</span>
-      <h2 class="subtitle">Everything you need in one place</h2>
+      <div class="up">
+        <p class="up__p">03</p>
+        <h2 class="up__subtitle">Everything you need in one place</h2>
+      </div>
       <p class="cont">
         Stop jumping from one service to another to communicate, store files,
         track tasks and share documents. Manage offers an all-in-one team
