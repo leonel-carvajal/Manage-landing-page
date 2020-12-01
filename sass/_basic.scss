@@ -1,0 +1,25 @@
+:root{
+  --Bright-Red: hsl(12, 88%, 59%);
+--Dark-Blue: hsl(228, 39%, 23%);
+--Dark-Grayish-Blue: hsl(227, 12%, 61%);
+--Very-Dark-Blue: hsl(233, 12%, 13%);
+--Very-Pale-Red: hsl(13, 100%, 96%);
+--Vary-Light-Gray: hsl(0, 0%, 98%);
+--size:16px;
+--font-name:'Be Vietnam'
+}
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+$bright-red:var(--Bright-Red);
+$darkblue:var(--Dark-Blue);
+$darGrayish:var(--Dark-Grayish-Blue);
+$verydark:var(--Very-Dark-Blue);
+$veryPale :var(--Very-Pale-Red);
+$veryligh:var(--Vary-Light-Gray);
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-name);
+  font-size: 16px;
+}
