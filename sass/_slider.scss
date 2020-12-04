@@ -46,7 +46,16 @@
   padding: 0.7rem;
   border-radius: 40px;
 }
+
 .simplify{
+  @include tablet{
+    background-image: url('/images/bg-simplify-section-desktop.svg');
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
   background-color: $bright-red;
   height: 300px;
   color: $veryligh;
@@ -56,6 +65,9 @@
     font-weight: 700;
   }
   &__button{
+    @include tablet{
+      margin: 0;
+    }
     display: block;
     width: 150px;
     margin-left: auto;

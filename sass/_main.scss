@@ -3,18 +3,39 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-
+  background: none;
+  @include tablet{
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background:url('/images/illustration-intro.svg'), url('/images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-position:  550px 0,720px 0;
+    background-size:40%;
+  }
   &__title {
     color: $darkblue;
     font-size: 2.2rem;
     text-align: center;
     font-weight: 700;
+    @include tablet{
+      text-align: left;
+      width: 60%;
+      font-size: 2.5rem;
+    }
   }
 
   &__content {
     color: rgba(#000, 0.3);
     text-align: center;
     font-size: 1.1rem;
+    @include tablet{
+      font-size: 1.4rem;
+      width: 68%;
+      margin-top: -50px;
+      grid-column: 1/2;
+      text-align: left;
+    }
   }
 
   &__button {
@@ -29,11 +50,29 @@
     font-size: 1.2rem;
     padding: 0.7rem;
     border-radius: 40px;
+    @include tablet {
+      grid-column: 1/2;
+      width: 200px;
+      height: 50px;
+      margin: 0;
+    }
   }
 }
 
 .different {
+  @include tablet{
+    background: url('/images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-position: 40px 10px;
+    background-size: 40%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
   & h2 {
+    @include tablet{
+     text-align: center;
+    }
     color: $darkblue;
     font-size: 1.8rem;
     text-align: center;
@@ -41,6 +80,10 @@
   }
 
   & p {
+    @include tablet{
+      text-align: center;
+      font-size: 1.2rem;
+    }
     color: rgba(#000, 0.3);
     text-align: center;
     font-size: 1rem;
@@ -48,6 +91,7 @@
 }
 .content{
   margin-bottom: 60px;
+  grid-row: span 2;
 }
 .card{
   width: 90%;
@@ -82,5 +126,9 @@
   
 }
 .card:last-child{
+  @include tablet{
+    grid-column: 2/-1;
+  }
   margin-bottom: 70px;
+
 }
