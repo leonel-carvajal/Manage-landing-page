@@ -44,6 +44,9 @@
 }
 
 .menu {
+  &__item{
+    cursor: pointer;
+  }
   @include tablet {
     transform: translateX(0);
     grid-column: 2/3;

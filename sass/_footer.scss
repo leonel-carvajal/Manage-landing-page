@@ -109,3 +109,13 @@
     }
   }
 }
+.attribution{
+  margin-top: 20px;
+  text-align: center;
+    background-color: $verydark;
+    color: $veryligh;
+    & a{
+      text-decoration: none;
+      color:$bright-red;
+    }
+}
